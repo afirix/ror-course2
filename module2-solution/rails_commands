@@ -1,0 +1,5 @@
+rails g model user username password_digest
+rails g model profile gender birth_year:integer first_name last_name user:references
+rails g model todo_list list_name list_due_date:date
+rails g migration add_user_to_todo_list 'user:references'
+rails g model todo_item due_date:date title description:text completed:boolean todo_list:references

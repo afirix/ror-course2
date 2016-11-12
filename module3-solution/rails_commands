@@ -1,0 +1,1 @@
+rails g scaffold todo_item due_date:date title description:text completed:boolean
